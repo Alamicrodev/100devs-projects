@@ -6,7 +6,7 @@
 #### Task: 
 Without using CSS grid or flexbox, create a clone of the TechCrunch site layout as close as you can from the picture provided in the folder. All the layout must be completed using floats. The design does not have to be responsive.
 
-<img src="./techcrunch.png" />
+<img src="./techcrunch.png" width="50%" />
 
 ## Languages and Tools
 
