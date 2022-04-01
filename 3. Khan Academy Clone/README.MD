@@ -1,9 +1,13 @@
-#BBC NEWS Site CLONE
+# KHAN ACADEMY SITE CLONE 
 
-Class: 8, 9, 10
-Task: Without using CSS grid or flexbox, create a clone of the Khan Academy site layout as close as you can from the picture provided in the folder. All the layout must be completed using floats. The design does not have to be responsive.
+#### Class: 
+8, 9, 10
 
-<img src="./khan-academy.png" />
+#### Task: 
+Without using CSS grid or flexbox, create a clone of the Khan Academy site layout as close as you can from the picture provided in the folder. All the layout must be completed using floats. The design does not have to be responsive.
+
+#### Image:
+<img src="./khan-academy.png" width="50%" />
 
 ## Languages and Tools
 
