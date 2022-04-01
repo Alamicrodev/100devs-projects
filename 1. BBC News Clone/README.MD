@@ -1,4 +1,4 @@
-# BBC NEWS Site CLONE
+# BBC NEWS SITE CLONE
 
 #### Class: 
 8, 9, 10
