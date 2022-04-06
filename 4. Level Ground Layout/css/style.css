@@ -206,6 +206,7 @@ header > img {
 /* start of options section */
 .container__2 {
 	padding: 100px 150px;
+	width: 100%;
 	clear: both;
 	float: left;
 	background: #cad2db;

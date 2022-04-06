@@ -1,0 +1,450 @@
+html {
+	font-size: 10px;
+}
+
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+nav {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+	padding: 15px 20px;
+}
+
+header > .hamb {
+	display: none;
+}
+
+header > span {
+	font-size: 3em;
+	font-weight: bold;
+	color: rgb(37, 37, 63);
+	display: inline-block;
+	vertical-align: middle;
+	width: 100px;
+}
+
+header > nav {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	width: calc(100% - 200px);
+}
+
+header > nav > ul > li {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+header > nav > ul > li:last-child {
+	display: inline-block;
+	margin-right: 0px;
+}
+
+header > nav > ul > li > a {
+	text-decoration: none;
+	font-size: 1.5em;
+	color: grey;
+}
+
+header > nav > ul > li > a:hover {
+	color: rgb(37, 37, 63);
+}
+
+header > a {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+	text-align: center;
+	background: #304658;
+	padding: 10px 20px;
+	width: 80px;
+}
+
+/* end of header */
+
+/* start of main section */
+.main {
+	width: 100%;
+	float: left;
+	margin-top: 40px;
+}
+
+.main > section {
+	float: left;
+	width: 48%;
+	padding: 50px 100px;
+}
+
+.main > section > span {
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	color: grey;
+}
+
+.main > section > h1 {
+	font-size: 4em;
+	margin-top: 10px;
+	color: #304658;
+}
+
+.main > section > form {
+	width: 100%;
+}
+
+.main > section > form > input:first-child {
+	height: 40px;
+	width: 70%;
+	border: none;
+	outline: none;
+	background: #e1e9f1;
+	padding-left: 10px;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.main > section > form > button {
+	height: 40px;
+	width: 30%;
+	color: white;
+	margin-left: -5px;
+	font-size: 1.5em;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: #304658;
+}
+
+.main > section > form > button:hover {
+	font-weight: bold;
+	transition: font-weight 0.5s ease-in-out;
+}
+
+.main > section > p {
+	font-size: 1.8em;
+	margin-top: 35px;
+	color: grey;
+}
+
+.main > img {
+	float: left;
+	width: 52%;
+}
+
+/* end of main section */
+
+/* start of features section */
+
+.features {
+	clear: both;
+	padding: 50px 100px;
+}
+
+.features > ul > li {
+	float: left;
+	width: calc(25% - 20px);
+	margin-right: 20px;
+	vertical-align: middle;
+}
+
+.features > ul > li:last-child {
+	margin-right: 10px;
+}
+
+.features > ul > li > i {
+	font-size: 3em;
+	color: #304658;
+	display: block;
+	margin-bottom: 12px;
+}
+
+.features > ul > li > span {
+	font-size: 1.7em;
+	font-weight: bold;
+	color: #304658;
+}
+
+.features > ul > li > p {
+	font-size: 1.5em;
+	color: grey;
+}
+
+.features ul > li > a {
+	color: #304658;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.features ul > li > a:hover {
+	text-decoration: underline;
+}
+
+/* end of features section */
+
+/* start of extra section */
+
+.extra {
+	padding: 50px 100px;
+	clear: both;
+}
+
+.extra > h2 {
+	font-size: 4em;
+	width: 60%;
+	color: #304658;
+}
+
+.extra > p {
+	font-size: 1.5em;
+	color: grey;
+	width: 70%;
+	margin-bottom: 50px;
+}
+
+.extra > img {
+	width: 50%;
+}
+
+/* end of extra section */
+
+/* footer */
+
+footer {
+	width: 100%;
+	padding: 10px 20px;
+	color: white;
+	background: #304658;
+}
+
+footer > p {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/*  1000px and less */
+
+@media screen and (max-width: 1000px) {
+	.main > section {
+		width: 60%;
+		padding: 50px 70px;
+	}
+
+	.main > img {
+		width: 40%;
+		padding-top: 50px;
+	}
+
+	.features {
+		padding: 50px 70px;
+	}
+
+	.extra {
+		padding: 50px 70px;
+	}
+
+	.extra > h2 {
+		width: 80%;
+	}
+
+	.extra > p {
+		width: 90%;
+	}
+}
+
+/* 800px and less */
+
+@media screen and (max-width: 800px) {
+	.main > section {
+		width: 60%;
+		padding: 50px 40px;
+	}
+
+	.main > img {
+		width: 40%;
+		padding-top: 50px;
+	}
+
+	.features {
+		padding: 50px 40px;
+	}
+
+	.features > ul > li {
+		width: calc(50% - 40px);
+		margin-right: 30px;
+	}
+
+	.features > ul > li:nth-child(2),
+	.features > ul > li:nth-child(4) {
+		margin-right: 0px;
+	}
+
+	.features > ul > li:nth-child(3),
+	.features > ul > li:nth-child(4) {
+		margin-top: 40px;
+	}
+
+	.extra {
+		padding: 50px 40px;
+	}
+
+	.extra > h2 {
+		width: 90%;
+	}
+
+	.extra > p {
+		width: 100%;
+	}
+
+	.extra > img {
+		width: 70%;
+	}
+}
+
+/* under 650px */
+
+@media screen and (max-width: 650px) {
+	header {
+		text-align: left;
+	}
+
+	header > .hamb {
+		display: inline-block;
+		font-size: 2.5em;
+		vertical-align: middle;
+		width: 15px;
+		color: #304658;
+	}
+
+	header > span {
+		width: calc(100% - 20px);
+		text-align: center;
+		font-size: 2.5em;
+	}
+
+	header > nav {
+		display: none;
+	}
+
+	header > a {
+		display: none;
+	}
+
+	.main {
+		margin-top: 10px;
+	}
+
+	.main > section {
+		width: 70%;
+	}
+
+	.main > section > h1 {
+		font-size: 3.5em;
+	}
+
+	.main > img {
+		width: 30%;
+		padding-top: 80px;
+	}
+
+	.features {
+		padding: 30px 50px;
+	}
+
+	.extra > h2 {
+		font-size: 3em;
+	}
+}
+
+/* under 400px */
+
+@media screen and (max-width: 400px) {
+	.main {
+		margin-top: 10px;
+	}
+
+	.main > section {
+		width: 100%;
+		padding: 40px 20px;
+	}
+
+	.main > section > h1 {
+		font-size: 3em;
+	}
+
+	.main > img {
+		width: 100%;
+		padding-top: 0px;
+	}
+
+	.features {
+		padding: 40px 20px;
+	}
+
+	.features > ul > li {
+		width: 100%;
+		margin-right: 0;
+		margin-top: 40px;
+	}
+
+	.extra {
+		padding: 40px 20px;
+	}
+
+	.extra > h2 {
+		font-size: 2.7em;
+		width: 100%;
+	}
+
+	.extra > p {
+		width: 100%;
+	}
+
+	.extra > img {
+		width: 100%;
+	}
+}
