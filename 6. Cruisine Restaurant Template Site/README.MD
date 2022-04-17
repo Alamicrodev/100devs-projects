@@ -1,4 +1,4 @@
-# LEVEL GROUND WIREFRAME SITE LAYOUT
+# Cruisine Restaurant CONCEPT SITE LAYOUT
 
 #### Class:
 
@@ -6,13 +6,13 @@
 
 #### Task:
 
-Without using CSS grid or flexbox, create a clone of the level ground concept site layout as close as you can from the picture/wireframe provided in the folder. All the layout must be completed using floats. The design must be responsive.
+Without using CSS grid or flexbox, create Cruisine Restaurant concept site layout as close as you can from the picture/wireframe provided in the folder. All the layout must be completed using floats or inline-block. The design must be responsive.
 
 Must be responsive!
 
 #### Image:
 
-<img src="./level-ground-wireframe.png" width="50%" />
+<img src="./cuisine-restaurant-mithun-ray.png" width="100%" />
 
 ## Languages and Tools
 
