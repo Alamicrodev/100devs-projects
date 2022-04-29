@@ -1,4 +1,8 @@
 /* Box Model Hack */
+html {
+	font-size: 10px;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -42,7 +46,7 @@ header > nav > * {
 }
 
 header > nav > a {
-	font-size: 1.3em;
+	font-size: 2em;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -91,7 +95,7 @@ header > nav > ul > * {
 
 header > nav > ul > li > a {
 	display: block;
-	font-size: 1.2em;
+	font-size: 2em;
 	text-decoration: none;
 	padding: 25px 0;
 }
@@ -103,11 +107,11 @@ section {
 section > section {
 	float: left;
 	width: 50%;
-	text-align: right;
+	text-align: center;
 }
 
 section > section > img {
-	margin-right: 20px;
+	width: 90%;
 }
 
 section > section + section {
@@ -115,26 +119,29 @@ section > section + section {
 }
 
 section > section + section > h1 {
-	width: 70%;
-	font-size: 4em;
+	width: 90%;
+	font-size: 6em;
 }
 
 section > section + section > p {
-	width: 70%;
-	font-size: 1.5em;
+	width: 90%;
+	font-size: 2em;
 	margin-bottom: 40px;
 }
 
 section > section + section > ul {
 	list-style: none;
-	width: 70%;
-	margin-top: 10px;
+	width: 90%;
+	margin-top: 0px;
 	padding-left: 0;
+	font-size: 2em;
 }
 
 section > section + section > ul > li {
 	float: left;
 	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom: 40px;
 }
 
 section > section + section > ul > li > a {
@@ -149,3 +156,36 @@ section > section + section > ul > li > a {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media screen and (max-width: 500px) {
+	header > nav {
+		display: none;
+	}
+
+	section > section {
+		width: 100%;
+		text-align: center;
+	}
+
+	section > section + section {
+		text-align: center;
+	}
+
+	section > section > img {
+		width: 70%;
+	}
+
+	section > section + section > h1 {
+		width: 90%;
+		margin: 0 auto;
+	}
+	section > section + section > p {
+		width: 90%;
+		margin: 40px auto;
+	}
+
+	section > section + section > ul {
+		width: 90%;
+		margin: 10px auto;
+	}
+}
